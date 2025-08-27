@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Khushi Gupta • Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Khushi Gupta — Full Stack & AI Developer. Portfolio & résumé.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Animated background layer -->
+  <div id="bg">
+    <!-- SVG blobs -->
+    <svg class="blob blob-1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(300,300)">
+        <path fill="url(#g1)" d="M120,-165C165,-128,203,-85,213,-36C223,13,205,68,170,111C135,153,84,185,31,201C-21,217,-74,217,-127,198C-179,179,-231,141,-245,88C-259,35,-235,-33,-200,-86C-165,-138,-120,-175,-70,-207C-20,-239,35,-265,86,-247C137,-229,75,-202,120,-165Z"/>
+      </g>
+      <defs>
+        <linearGradient id="g1" x1="0" x2="1">
+          <stop offset="0%" stop-color="#7c5cff"/>
+          <stop offset="100%" stop-color="#c27bff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <svg class="blob blob-2" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g transform="translate(300,300)">
+        <path fill="url(#g2)" d="M120,-165C165,-128,203,-85,213,-36C223,13,205,68,170,111C135,153,84,185,31,201C-21,217,-74,217,-127,198C-179,179,-231,141,-245,88C-259,35,-235,-33,-200,-86C-165,-138,-120,-175,-70,-207C-20,-239,35,-265,86,-247C137,-229,75,-202,120,-165Z"/>
+      </g>
+      <defs>
+        <linearGradient id="g2" x1="0" x2="1">
+          <stop offset="0%" stop-color="#0bb3ff"/>
+          <stop offset="100%" stop-color="#7c5cff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <!-- flowing gradient line (subtle) -->
+    <div class="flow-line" aria-hidden="true"></div>
+
+    <!-- floating dots canvas -->
+    <canvas id="particles" aria-hidden="true"></canvas>
+  </div>
+
+  <!-- Page -->
+  <div class="page">
+    <nav class="nav" id="mainNav" role="navigation" aria-label="Main navigation">
+      <div class="brand">Khushi Gupta</div>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <!-- <li><a href="#experience">EXPERIENCE</a></li> -->
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#certifications">CERTIFICATIONS</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#contact-strip">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <header id="home" class="hero">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="name">Khushi Gupta</span></h1>
+        <h2 class="typed">
+          <span id="typed-line"></span><span class="cursor">|</span>
+        </h2>
+        <p class="lead">Passionate about automation and innovation — I build Automation tools, accessible AI solutions and work on full stack Projects.</p>
+
+        <div class="cta">
+          <!-- <a class="btn" href="#projects">See Projects ↓</a> -->
+          <!-- <button id="printBtn" class="btn ghost">Print Resume</button> -->
+          <a class="btn ghost" href="assests/Resume - Khushi Gupta.pdf" download>Download Resume</a>
+        </div>
+
+        <!-- <div class="quick-info">
+          <div><strong>Location</strong><br>Meerut, Uttar Pradesh</div>
+          <div><strong>Email</strong><br><a href="https://mail.google.com/mail/?view=cm&fs=1&to=kkhushiiarca@gmail.com" target="_blank" rel="noopener">kkhushiiarca@gmail.com</a></div>
+          <div><strong>Mobile</strong><br>8171008277</div>
+        </div> -->
+      </div>
+
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <img src="assests/profile.jpg" alt="Khushi Gupta" class="avatar">
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+
+
+      <section id="skills" class="section reveal">
+  <h2>Tools I wield to turn ideas into reality</h2>
+
+  <!-- Languages -->
+  <div class="skill-category">
+    <h4>Languages</h4>
+    <div class="skills-row">
+      <div class="skill-item">
+        <img src="assests/icons/python.svg" alt="Python" class="skill-icon">
+        <span>Python</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/javascript.svg" alt="JavaScript" class="skill-icon">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/html.svg" alt="HTML" class="skill-icon">
+        <span>HTML</span>
+      <div class="skill-item">
+        <img src="assests/icons/css.svg" alt="CSS" class="skill-icon">
+        <span>CSS</span>  
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/java.svg" alt="Java" class="skill-icon">
+        <span>Java</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Frameworks -->
+  <div class="skill-category">
+    <h4>Frameworks</h4>
+    <div class="skills-row">
+      <div class="skill-item">
+        <img src="assests/icons/api.png" alt="React" class="skill-icon" style="background: white;">
+        <span>Fast API</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/flask.svg" alt="Flask" class="skill-icon" style="background: white;" >
+        <span>Flask</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Libraries -->
+  <div class="skill-category">
+    <h4>Libraries</h4>
+    <div class="skills-row">
+      <div class="skill-item">
+        <img src="assests/icons/numpy.svg" alt="NumPy" class="skill-icon">
+        <span>NumPy</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/pandas.svg" alt="Pandas" class="skill-icon" style="background: white;">
+        <span>Pandas</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/matplotlib.svg" alt="Matplotlib" class="skill-icon"style="background: white;">
+        <span>Matplotlib</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/mediapipe.svg" alt="MediaPipe" class="skill-icon" style="background: white;">
+        <span>MediaPipe</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/opencv.svg" alt="OpenCV" class="skill-icon">
+        <span>OpenCV</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/scikitlearn.svg" alt="scikit-learn" class="skill-icon" style="background: white;">
+        <span>scikit-learn</span>
+      </div>
+    </div>
+  </div>
+
+<!-- Databases -->
+  <div class="skill-category">
+    <h4>Databases</h4>
+    <div class="skills-row">
+      <div class="skill-item">
+        <img src="assests/icons/mysql.svg" alt="mysql" class="skill-icon" style="background: white;">
+        <span>MySql</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/firebase.svg" alt="Firebase" class="skill-icon">
+        <span>Firebase</span>
+      </div>
+    </div>
+
+  <!-- Tools -->
+  <div class="skill-category">
+    <h4>Tools</h4>
+    <div class="skills-row">
+      <div class="skill-item">
+        <img src="assests/icons/github.svg" alt="GitHub" class="skill-icon" style="background: white;">
+        <span>GitHub</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/google-cloud.svg" alt="google-cloud" class="skill-icon">
+        <span>Google Cloud Platform</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/vscode.svg" alt="VS Code" class="skill-icon">
+        <span>VS Code</span>
+      </div>
+      <div class="skill-item">
+        <img src="assests/icons/intellij-idea.svg" alt="intellij-idea" class="skill-icon">
+        <span>Intellij-idea</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section reveal">
+  <h2>Projects that speak for me</h2>
+
+  <!-- Project 1 -->
+  <article class="card project-card" tabindex="0"
+    data-title="AI Data Analysis Assistant"
+    data-tech="Python · Flask · Pandas · Matplotlib · Gemini API"
+    data-desc="Analyzes CSVs, generates visual summaries, interactive visualizations and auto-generated reports. Click to view screenshots and demo."
+    data-img="">
+
+    <!-- Project icon -->
+    <div class="project-icon">
+      <i class="fas fa-chart-line"></i>
+    </div>
+
+    <!-- Project content wrapper -->
+    <div class="project-content">
+      <!-- Project image -->
+      <div class="project-image">
+        <img src="assests/project-data-analysis.png" alt="AI Data Analysis Assistant" class="card-img">
+      </div>
+      <!-- Project text -->
+      <div class="project-text">
+        <h4>AI Data Analysis Assistant</h4>
+        <p class="muted">Python · Flask · Pandas · Matplotlib · HTML · CSS</p>
+        <ul>
+          <li>Analyzes CSVs, generates visual summaries and insights.</li>
+          <li>Interactive visualizations and auto-generated reports.</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn.source" href="https://github.com/khushii-19/AI_Analytics_Assistant" target="_blank" style="display:inline-block; padding:10px 20px; border-radius:30px; background:linear-gradient(90deg, #b38bfa, #3ec8ff); color:rgb(10, 0, 0); font-weight:bold; text-decoration:none; transition:0.3s;" rel="noopener">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 2 -->
+  <article class="card project-card" tabindex="0"
+    data-title="Sign Language Detector"
+    data-tech="Python · OpenCV · MediaPipe · scikit-learn · pyttsx3"
+    data-desc="Realtime A–Z gesture recognition with speech output. Focused on low latency and accessible UI."
+    data-img="assets/project-signlang.png">
+
+    <!-- Project icon -->
+    <div class="project-icon">
+      <i class="fas fa-hand-paper"></i>
+    </div>
+
+    <!-- Project content wrapper -->
+    <div class="project-content">
+      <!-- Project image -->
+      <div class="project-image">
+        <img src="assests/project-signlang.png" alt="Sign Language Detector" class="card-img">
+      </div>
+      <!-- Project text -->
+      <div class="project-text">
+        <h4>Sign Language Detector</h4>
+        <p class="muted">Python · OpenCV · MediaPipe · scikit-learn · pyttsx3</p>
+        <ul>
+          <li>Realtime A–Z gesture recognition with TTS output.</li>
+          <li>Accessibility-focused UI and low-latency detection.</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn.source" href="https://github.com/khushii-19/Sign_language_detector" target="_blank" style="display:inline-block; padding:10px 20px; border-radius:30px; background:linear-gradient(90deg, #b38bfa, #3ec8ff); color:rgb(10, 0, 0); font-weight:bold; text-decoration:none; transition:0.3s;" rel="noopener">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 3 -->
+  <article class="card project-card" tabindex="0"
+    data-title="Sign Language Detector"
+    data-tech="Python · OpenCV · MediaPipe · scikit-learn · pyttsx3"
+    data-desc="Realtime A–Z gesture recognition with speech output. Focused on low latency and accessible UI."
+    data-img="assets/project-signlang.png">
+
+    <!-- Project icon -->
+    <div class="project-icon">
+      <i class="fas fa-music"></i>
+    </div>
+
+    <!-- Project content wrapper -->
+    <div class="project-content">
+      <!-- Project image -->
+      <div class="project-image">
+        <img src="assests/spotify_clone.png" alt="Sign Language Detector" class="card-img">
+      </div>
+      <!-- Project text -->
+      <div class="project-text">
+        <h4>Sign Language Detector</h4>
+        <p class="muted">HTML · CSS · JavaScript</p>
+        <ul>
+          <li>Spotify Clone – Responsive music player with play/pause, next/previous, seek & volume controls.</li>
+          <li>Mobile-friendly UI for a smooth listening experience..</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn.source" href="https://github.com/khushii-19/Sign_language_detector" target="_blank" style="display:inline-block; padding:10px 20px; border-radius:30px; background:linear-gradient(90deg, #b38bfa, #3ec8ff); color:rgb(10, 0, 0); font-weight:bold; text-decoration:none; transition:0.3s;" rel="noopener"> Source Code</a>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+      <section id="education" class="section reveal">
+        <h2>Building blocks of my career</h2>
+        <div class="education-container">
+          <div class="edu-card" style="background-image: url('assests/miet.png');">
+            <div class="edu-content">
+              <h4>Meerut Institute of Engineering & Technology</h4>
+              <p class="muted">B.Tech — Computer Science & Engineering · Sept 2022 — Jul 2026 (80%)</p>
+            </div>
+          </div>
+
+          <div class="edu-card" style="background-image: url('assests/school.jpg');">
+            <div class="edu-content">
+              <h4>Meerut Public School for Girls, Meerut Cantt</h4>
+              <p class="muted">Senior Secondary · Apr 2021 — May 2022 (92%)</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <!-- Certifications Section -->
+    <section id="certifications" style="padding:50px 0; text-align:center; background: #070707; color: #e8eefb;">
+  <h2 style="margin-bottom:30px; color: var(--accent1);">Learning, achieving, showcasing</h2>
+  
+  <div class="cert-row">
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/hackerrank.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">SQL Intermediate </div>
+          <a href="https://www.hackerrank.com/certificates/iframe/7e30d82900c4" alt="Certificate 1" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/mongodb.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">Building AI agents with MongoDB </div>
+          <a href="https://www.credly.com/badges/f3e47e1c-b6bd-496d-9813-e4f55c937640" alt="Certificate 2" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/hackerrank.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">Software Engineer Intern </div>
+          <a href="https://www.hackerrank.com/certificates/iframe/3be35809d87d" alt="Certificate 3" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/mongodb.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">Introduction to MongoDB (For Students)</div>
+          <a href="https://learn.mongodb.com/c/DGk2vDLwQtOnxwQPerFf5A" alt="Certificate 4" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 1 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/forage.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">AWS - Solutions Architecture Job Simulation </div>
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_kJEMqjiKAanzHcxT8_1751657367403_completion_certificate.pdf" alt="Certificate 5" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="cert-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="assests/certifications/logos/forage.png" alt="Company 1" class="cert-logo">
+          <div class="cert-name">Deloitte - Data Analytics Job Simulation </div>
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_kJEMqjiKAanzHcxT8_1751548543959_completion_certificate.pdf" alt="Certificate 5" target="_blank" rel="noopener" class="cert-photo">Show Credential </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+    <!-- Galleryyyyyyyy -->
+
+      <section id="gallery" class="section reveal">
+        <h2>Moments that tell my story</h2>
+        <div class="grid grid-3 gallery">
+          <img src="asseSts/Gallery/IMG-20250827-WA0071.jpg" alt="Gallery 1">
+          <!-- <img src="asseSts/Gallery/IMG-20250827-WA0072.jpg" alt="Gallery 2"> -->
+          <img src="asseSts/Gallery/IMG-20250827-WA0073.jpg" alt="Gallery 3">
+          <img src="assests/Gallery/IMG-20250827-WA0074.jpg" alt="Gallery 4">
+          <img src="assests/Gallery/IMG-20250827-WA0075.jpg" alt="Gallery 5">
+          <img src="assests/Gallery/IMG-20250827-WA0076.jpg" alt="Gallery 6">
+          <img src="assests/Gallery/IMG-20250827-WA0081.jpg" alt="Gallery 11">
+          <img src="assests/Gallery/IMG-20250827-WA0077.jpg" alt="Gallery 7">
+          <img src="assests/Gallery/IMG-20250827-WA0082.jpg" alt="Gallery 8">
+          <img src="assests/Gallery/IMG-20250827-WA0079.jpg" alt="Gallery 9">
+          <img src="assests/Gallery/IMG-20250827-WA0080.jpg" alt="Gallery 10">
+          
+        </div>
+      </section>
+
+      <!-- Contact Strip -->
+<section id="contact-strip">
+  <div class="contact-container">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kkhushiiarca@gmail.com" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/new-post.png"/> 
+    </a>
+    <a href="tel:8171008277" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/phone.png"/> 
+    </a>
+    <a href="https://www.linkedin.com/in/khushi-gupta-8b6308247/" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/linkedin.png"/> 
+    </a>
+    <a href="https://github.com/khushii-19" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/github.png"/> 
+    </a>
+    <a href="https://x.com/Khushii__19" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png"/> 
+    </a>
+    <a href="https://leetcode.com/u/khushii__19/" target="_blank">
+      <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/30/ffffff/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-filled-tal-revivo.png"/> 
+    </a>
+    <!-- <a href="https://instagram.com/yourprofile" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png"/> 
+    </a> -->
+  </div>
+</section>
+
+
+    <footer class="footer">
+      © 2025 Khushi Gupta · Built with ❤️
+    </footer>
+  </div>
+
+  <!-- Project modal (dynamic content injected) -->
+  <div id="projectModal" class="modal" aria-hidden="true" role="dialog" aria-label="Project details">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div class="modal-body"></div>
+  </div>
+
+  <!-- Lightbox for gallery -->
+  <div id="lightbox" aria-hidden="true" tabindex="-1">
+    <button id="lbPrev" class="lb-btn" aria-label="Previous image">‹</button>
+    <img src="" alt="Gallery image">
+    <button id="lbNext" class="lb-btn" aria-label="Next image">›</button>
+    <button id="lbClose" class="lb-close" aria-label="Close">✕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
