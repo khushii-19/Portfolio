@@ -174,3 +174,13 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("sticky");
   }
 });
+
+
+
+
+
+
+
+
+
+
